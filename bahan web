@@ -1,0 +1,45 @@
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- 2. Skrip untuk mengirim email -->
+    <script type="text/javascript">
+        (function() {
+            // Ganti dengan Public Key Anda dari EmailJS -> Account -> API Keys
+            emailjs.init({
+                publicKey: "cB3wBwNmLWW-V5Fq9",
+            });
+        })();
+
+        const contactForm = document.querySelector('.contact-form');
+        const formStatus = document.querySelector('.form-status');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Mengirim...';
+            formStatus.textContent = '';
+            formStatus.className = 'form-status';
+
+            // Ganti dengan Service ID dan Template ID Anda dari EmailJS
+            const serviceID = 'service_chag5hk';
+            const templateID = 'template_wfcea8d';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    formStatus.textContent = 'Pesan Anda berhasil terkirim! Terima kasih.';
+                    formStatus.classList.add('success');
+                    contactForm.reset();
+                }, (err) => {
+                    console.error("EmailJS error: ", err);
+                    formStatus.textContent = 'Gagal mengirim pesan. Silakan coba lagi.';
+                    formStatus.classList.add('error');
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Kirim Pesan';
+                });
+        });
+    </script>
+</body>
+</html>
