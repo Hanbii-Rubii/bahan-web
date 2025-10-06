@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya | Rubii</title>
+
+    <!-- Path diubah untuk keluar dari folder 'pages' lalu masuk ke 'assets' -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Menghubungkan Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Menghubungkan Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <nav>
+            <!-- Path diubah untuk kembali ke halaman utama -->
+            <a href="../index.html" class="logo">Rubii</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="#" class="active">Tentang</a></li>
+                <li><a href="../index.html#projects">Proyek</a></li>
+                <li><a href="../index.html#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bagian Tentang Saya -->
+        <section id="about" class="scroll-reveal visible">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+                     <!-- Path diubah ke folder assets/images/ -->
+                     <!-- Ganti 'foto.jpg' dengan nama file gambar Anda -->
+                    <img src="../assets/images/avatar.png" alt="Tentang Saya" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333/EFEFEF?text=Tentang+Saya';">
+                </div>
+                <div class="about-text">
+                    <h3>Skil & tools</h3>
+                    <p>Saya adalah seorang profesional yang bersemangat dalam dunia teknologi dengan fokus pada pengembangan web modern. Saya memiliki pengalaman dalam menciptakan aplikasi web yang responsif, fungsional, dan menarik secara visual. Keahlian utama saya meliputi HTML, CSS, JavaScript, dan framework modern seperti React.</p>
+                    <p>Di luar coding, saya suka menjelajahi tren desain terbaru, berkontribusi pada proyek open-source, dan menikmati secangkir kopi sambil merencanakan proyek besar berikutnya.</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Figma</span>
+                        <span>Capcut</span>
+                        <span>Tailwind CSS</span>
+                        <span>email.js</span>
+                        <span>Git</span>
+                        <span>Github</span>
+                        <span>Alight montion</span>
+                        <span>canva</span>
+                        <span>Aceternity Ui</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div class="social-media">
+                <a href="https://github.com/Hannz45" target="blank" rel="noopener noreferrer">
+                <img src="../assets/images/github_icon.svg" alt="Ikon GitHub" style="width: 28px; height: 28px; vertical-align: middle;">
+                </a>
+                <a href="https://www.instagram.com/rehan_hannz45/" target="blank" rel="noopener noreferrer">
+                <img src="../assets/images/instagram_icon.svg" alt="Ikon isntagram" style="width: 28px; height: 28px; vertical-align: middle;">
+                </a>
+                <a href="https://wa.me/6283119691902" target="blank" rel="noopener noreferrer">
+                <img src="../assets/images/whatsapp_icon.svg" alt="Ikon whatsapp" style="width: 28px; height: 28px; vertical-align: middle;">
+                </a>
+                </div>
+                <h1 style="color:rgb(153, 253, 4);">TETAP SEMANGNGAT!!</h1>
+        
+               <div><br></div>  
+              <div class="copyright">
+        <p>&copy; Rubii-2025. Seluruh hak cipta.</p>
+    </footer>
+    
+    <!-- Path diubah untuk keluar dari folder 'pages' lalu masuk ke 'assets' -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
